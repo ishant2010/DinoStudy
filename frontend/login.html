@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DinoStudy - Secure Login</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="login-container">
+        <div class="login-card">
+            <div class="logo">
+                <h2>🦖 DinoStudy</h2>
+                <p>Authorized Student Access Only</p>
+            </div>
+
+            <div id="email-section">
+                <p>Enter your school email to receive a One-Time Password.</p>
+                <input type="email" id="email-input" placeholder="advocatepravin76@gmail.com">
+                <button id="send-otp-btn" onclick="handleSendOTP()">Send OTP Code</button>
+            </div>
+
+            <div id="otp-section" style="display: none;">
+                <p>An OTP code has been sent to your email. Enter it below:</p>
+                <input type="text" id="otp-input" placeholder="Enter 6-digit code" maxlength="6">
+                <button id="verify-otp-btn" onclick="handleVerifyOTP()">Verify & Login</button>
+            </div>
+
+            <div id="error-message" style="color: red; margin-top: 15px; font-weight: bold; text-align: center;"></div>
+        </div>
+    </div>
+
+    <script src="login-logic.js"></script> 
+</body>
+</html>

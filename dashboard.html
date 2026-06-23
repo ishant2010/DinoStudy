@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DinoStudy - Workspace</title>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;1,400&family=Inter:wght@300;400;500;600&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="dashboard.css">
+</head>
+
+<body>
+
+    <div class="dashboard-bg"></div>
+
+    <div class="app-container">
+        <aside class="sidebar">
+            <div class="logo">
+                <h2>DINO<span>STUDY</span></h2>
+            </div>
+            <nav class="nav-menu">
+                <a href="#" class="nav-link active">Hybrid Tracker</a>
+                <a href="#" class="nav-link">Class 11 Backlogs</a>
+                <a href="#" class="nav-link">Class 12 Curriculum</a>
+                <a href="#" class="nav-link">Vault (Uploads)</a>
+            </nav>
+            <div class="user-profile">
+                <div class="avatar"></div>
+                <span>Student_01</span>
+            </div>
+        </aside>
+
+        <main class="main-content">
+            <header class="top-header">
+                <h1>Command Center</h1>
+                <p>Track your daily targets and curriculum progress.</p>
+            </header>
+
+            <div class="bento-grid">
+
+                <div class="glass-card span-2">
+                    <h3>Today's Hybrid Schedule</h3>
+                    <div class="progress-container">
+                        <div class="stat">
+                            <span>School</span>
+                            <span class="hours">6 hrs</span>
+                        </div>
+                        <div class="bar-bg">
+                            <div class="bar-fill school-fill" style="width: 100%;"></div>
+                        </div>
+
+                        <div class="stat">
+                            <span>Tutor / Coaching</span>
+                            <span class="hours">3 hrs</span>
+                        </div>
+                        <div class="bar-bg">
+                            <div class="bar-fill tutor-fill" style="width: 75%;"></div>
+                        </div>
+
+                        <div class="stat">
+                            <span>Self-Study Target</span>
+                            <span class="hours">4 hrs</span>
+                        </div>
+                        <div class="bar-bg">
+                            <div class="bar-fill self-fill" style="width: 40%;"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="glass-card">
+                    <h3>Backlog Progress</h3>
+                    <div class="circular-progress">
+                        <h2>35%</h2>
+                        <p>Cleared</p>
+                    </div>
+                </div>
+
+                <div class="glass-card span-3">
+                    <h3>Current Objectives</h3>
+                    <ul class="task-list">
+                        <li>
+                            <input type="checkbox" id="task1">
+                            <label for="task1">Complete Physics Derivations</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" id="task2">
+                            <label for="task2">Revise Chemistry Organic Base</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" id="task3">
+                            <label for="task3">Math Practice: Calculus</label>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+        </main>
+    </div>
+
+</body>
+
+</html>
